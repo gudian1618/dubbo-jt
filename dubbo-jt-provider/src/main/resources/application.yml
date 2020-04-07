@@ -18,9 +18,9 @@ dubbo:
     name: provider-user  #提供者服务名称
   registry:              #链接zookeeper
     address: zookeeper://127.0.0.1:2182?backup=127.0.0.1:2181,127.0.0.1:2183
-#  configcenter: zookeeper://127.0.0.1:2182
-#  metadata-report:
-#    address: zookeeper://127.0.0.1:2182
+  #  configcenter: zookeeper://127.0.0.1:2182
+  metadata-report:
+    address: zookeeper://127.0.0.1:2182
   protocol:
     name: dubbo 
     port: 20880   #服务通信端口 消费者链接提供者端口

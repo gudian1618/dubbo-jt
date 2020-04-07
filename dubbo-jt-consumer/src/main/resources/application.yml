@@ -2,8 +2,10 @@ server:
   port: 9001
 dubbo:
   scan:
-    basePackages: com.github.gudian1618
+    basePackages: com.github.gudian1618.dubbo.jt
   application:
     name: consumer-user  #服务名称"唯一"
   registry:
-    address: zookeeper://127.0.0.1:2181?backup=127.0.0.1:2182,127.0.0.1:2183
+    address: zookeeper://127.0.0.1:2182?backup=127.0.0.1:2181,127.0.0.1:2183
+  metadata-report:
+    address: zookeeper://127.0.0.1:2182
