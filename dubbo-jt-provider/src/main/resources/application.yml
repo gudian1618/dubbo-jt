@@ -13,18 +13,18 @@ spring:
 #Springboot整合dubbo  
 dubbo:
   scan:
-    basePackages: com.jt #包扫描dubbo的service注解
+    basePackages: com.github.gudian1618.dubbo.jt #包扫描dubbo的service注解
   application:
     name: provider-user  #提供者服务名称
   registry:              #链接zookeeper
-    address: zookeeper://192.168.175.129:2181?backup=192.168.175.129:2182,192.168.175.129:2183
+    address: zookeeper://127.0.0.1:2181?backup=127.0.0.1:2182,127.0.0.1:2183
   protocol:
     name: dubbo 
     port: 20880   #服务通信端口 消费者链接提供者端口
 
       
 mybatis-plus:
-  type-aliases-package: com.jt.dubbo.pojo       #配置别名包路径
+  type-aliases-package: com.github.gudian1618.dubbo.jt.pojo       #配置别名包路径
   mapper-locations: classpath:/mybatis/mappers/*.xml  #添加mapper映射文件
   configuration:
     map-underscore-to-camel-case: true                #开启驼峰映射规则

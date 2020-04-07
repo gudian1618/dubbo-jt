@@ -2,12 +2,12 @@ package com.github.gudian1618.dubbo.jt.controller;
 
 import java.util.List;
 
-import com.github.gudian1618.service.UserService;
+import com.github.gudian1618.dubbo.jt.service.UserService;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.alibaba.dubbo.config.annotation.Reference;
-import com.github.gudian1618.pojo.User;
+import com.github.gudian1618.dubbo.jt.pojo.User;
 
 @RestController
 public class UserController {
