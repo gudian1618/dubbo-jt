@@ -6,7 +6,7 @@ import com.github.gudian1618.dubbo.jt.service.UserService;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.alibaba.dubbo.config.annotation.Reference;
+import org.apache.dubbo.config.annotation.Reference;
 import com.github.gudian1618.dubbo.jt.pojo.User;
 
 @RestController

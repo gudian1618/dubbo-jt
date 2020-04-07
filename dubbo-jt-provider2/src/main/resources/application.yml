@@ -12,18 +12,18 @@ spring:
     
 dubbo:
   scan:
-    basePackages: com.jt
+    basePackages: com.github.gudian1618.dubbo.jt
   application:
     name: provider-user
   registry:
-    address: zookeeper://192.168.126.176:2181?backup=192.168.126.176:2182,192.168.126.176:2183
+    address: zookeeper://127.0.0.1:2182?backup=127.0.0.1:2181,127.0.0.1:2183
   protocol:
     name: dubbo
     port: 20882
 
       
 mybatis-plus:
-  type-aliases-package: com.jt.dubbo.pojo       #配置别名包路径
+  type-aliases-package: com.github.gudian1618.dubbo.jt.pojo       #配置别名包路径
   mapper-locations: classpath:/mybatis/mappers/*.xml  #添加mapper映射文件
   configuration:
     map-underscore-to-camel-case: true                #开启驼峰映射规则
