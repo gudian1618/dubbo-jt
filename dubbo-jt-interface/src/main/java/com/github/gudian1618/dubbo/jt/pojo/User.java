@@ -1,4 +1,4 @@
-package com.github.gudian1618.pojo;
+package com.github.gudian1618.dubbo.jt.pojo;
 
 import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.annotation.TableId;

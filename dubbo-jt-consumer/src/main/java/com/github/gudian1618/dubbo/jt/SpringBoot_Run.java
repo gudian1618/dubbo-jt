@@ -1,4 +1,4 @@
-package com.github.gudian1618;
+package com.github.gudian1618.dubbo.jt;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

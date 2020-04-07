@@ -1,8 +1,8 @@
-package com.github.gudian1618.service;
+package com.github.gudian1618.dubbo.jt.service;
 
 import com.alibaba.dubbo.config.annotation.Service;
-import com.github.gudian1618.mapper.UserMapper;
-import com.github.gudian1618.pojo.User;
+import com.github.gudian1618.dubbo.jt.mapper.UserMapper;
+import com.github.gudian1618.dubbo.jt.pojo.User;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import java.util.List;

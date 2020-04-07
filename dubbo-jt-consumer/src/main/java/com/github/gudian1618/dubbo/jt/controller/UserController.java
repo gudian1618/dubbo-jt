@@ -1,4 +1,4 @@
-package com.github.gudian1618.controller;
+package com.github.gudian1618.dubbo.jt.controller;
 
 import java.util.List;
 

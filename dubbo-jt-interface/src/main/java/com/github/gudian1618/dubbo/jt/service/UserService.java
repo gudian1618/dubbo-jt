@@ -1,6 +1,6 @@
-package com.github.gudian1618.service;
+package com.github.gudian1618.dubbo.jt.service;
 
-import com.github.gudian1618.pojo.User;
+import com.github.gudian1618.dubbo.jt.pojo.User;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
