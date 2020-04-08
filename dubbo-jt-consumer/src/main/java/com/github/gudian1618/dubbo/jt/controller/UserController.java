@@ -18,10 +18,9 @@ public class UserController {
 	 * check=true  当服务器启动时检查是否有提供者
 	 * 如果没有提供者,则程序启动报错.
 	 * check=false  
-	 * 当程序启动时不会检查是否有提供者.当程序调用
-	 * 时检查.   
+	 * 当程序启动时不会检查是否有提供者.当程序调用时检查.
 	 */
-	@Reference(timeout=3000,check=false)
+	@Reference(timeout=3000,check=false,loadbalance = "random")
 	private UserService userService;
 	
 	@RequestMapping("/findAll")
