@@ -20,7 +20,7 @@ public class UserController {
 	 * check=false  
 	 * 当程序启动时不会检查是否有提供者.当程序调用时检查.
 	 */
-	@Reference(timeout=3000,check=false,loadbalance = "random")
+	@Reference(timeout=3000,check=false,loadbalance = "roundRobin")
 	private UserService userService;
 	
 	@RequestMapping("/findAll")

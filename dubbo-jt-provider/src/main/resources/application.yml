@@ -8,12 +8,12 @@ spring:
     driver-class-name: com.mysql.jdbc.Driver
     url: jdbc:mysql://127.0.0.1:3306/jtdb?serverTimezone=GMT%2B8&useUnicode=true&characterEncoding=utf8&autoReconnect=true&allowMultiQueries=true
     username: root
-    password: root
+    password: 123456
 
 #Springboot整合dubbo  
 dubbo:
   scan:
-    basePackages: com.github.gudian1618.dubbo.jt #包扫描dubbo的service注解
+    base-Packages: com.github.gudian1618.dubbo.jt.service #包扫描dubbo的service注解
   application:
     name: provider-user  #提供者服务名称
   registry:              #链接zookeeper
@@ -24,7 +24,6 @@ dubbo:
   protocol:
     name: dubbo 
     port: 20880   #服务通信端口 消费者链接提供者端口
-
       
 mybatis-plus:
   type-aliases-package: com.github.gudian1618.dubbo.jt.pojo       #配置别名包路径

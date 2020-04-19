@@ -21,7 +21,9 @@ public class UserServiceImpl implements UserService {
         return userMapper.selectList(null);
     }
 
-    //user对象是消费者利用rpc通信传递
+    /**
+     * user对象是消费者利用rpc通信传递
+     */
     @Override
     public void saveUser(User user) {
 

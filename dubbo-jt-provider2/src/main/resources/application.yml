@@ -8,13 +8,13 @@ spring:
     driver-class-name: com.mysql.jdbc.Driver
     url: jdbc:mysql://127.0.0.1:3306/jtdb?serverTimezone=GMT%2B8&useUnicode=true&characterEncoding=utf8&autoReconnect=true&allowMultiQueries=true
     username: root
-    password: root
+    password: 123456
     
 dubbo:
   scan:
     basePackages: com.github.gudian1618.dubbo.jt
   application:
-    name: provider-user
+    name: provider-user2
   registry:
     address: zookeeper://127.0.0.1:2182?backup=127.0.0.1:2181,127.0.0.1:2183
   protocol:

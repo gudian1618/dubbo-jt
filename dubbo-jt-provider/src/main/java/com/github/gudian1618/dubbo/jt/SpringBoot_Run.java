@@ -5,6 +5,7 @@ import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
+@EnableDubbo
 @SpringBootApplication
 @MapperScan("com.github.gudian1618.dubbo.jt.mapper")
 public class SpringBoot_Run {
